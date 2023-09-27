@@ -18,14 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Blog Title 
-email: author_email@email.com 
-description: "Change the description so that it describes your blog" 
-baseurl: "/stat386-blog-theme" # the name of the repository 
-url: "https://esnt.github.io" #  change this to "https://<your-github-username>.github.io"
+title: "Visualizing: From Ordinary to Extraordinary"
+email: jpark42@byu.edu 
+description: "Explore the world of data visualization like never before! 
+Whether you're a data scientist, analyst, or simply a data enthusiast, we'll take you on a journey beyond bar charts and pie graphs, unlocking the secrets to creating 
+stunning, interactive, and meaningful visualizations. From mapping geographic data to crafting compelling data narratives, 
+we'll empower you to turn your data into captivating stories. 
+Join us on this visual adventure and transform your data into extraordinary visual insights." 
+baseurl: "" # the name of the repository 
+url: "https://JinSadiePark.github.io" #  change this to "https://<your-github-username>.github.io"
 image: https://source.unsplash.com/random
-author: Your name
-copyright: ABCD # Your initials or what you want the copyright to be.  Leave empty for no copyright
+author: Jinkyung Park
+copyright: JKP # Your initials or what you want the copyright to be.  Leave empty for no copyright
 footer_description: 'The default image for the site header is a random image from 
         <a href="https://source.unsplash.com/random" target="_blank"> Unsplash</a>. 
         The default image for the blog post is from
@@ -35,16 +39,16 @@ footer_description: 'The default image for the site header is a random image fro
 
 
 # Social media users names.  Leave fields blank that you don't want displayed
-twitter_username: 386student
-github_username:  386student
-linkedin_username: 386student
+twitter_username: 
+github_username:  JinSadiePark
+linkedin_username: Jinkyung Park
 dribbble_username: 
-facebook_username: 386student
+facebook_username: 
 flickr_username:
 instagram_username: 
 pinterest_username:
 youtube_username: 
-googleplus_username: 386student
+googleplus_username:
 
 plugins:
   - jekyll-feed
