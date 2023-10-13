@@ -16,6 +16,6 @@ When we create graphs there are a couple of things to consider.<br>
 <h2><strong>One Categorical Feature</strong></h2>
 We can use a bar chart for this. The <strong>categories</strong> are typically displayed on the <strong>x-axis</strong> while the height or length of the bars on the <strong>y-axis</strong> represents the <strong>frequency, count, or any other quantitative measure associated with each category</strong>.
 
-code
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%201.18.02%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 
 
