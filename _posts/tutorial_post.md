@@ -12,5 +12,7 @@ When we create graphs there are a couple of things to consider.
 Are we using categorical data or numerical data?
 Are we creating the graph based on one feature or multiple features?
 
-<h2><strong>Categorical Data with One Feature</strong></h2>
+<h2><strong>One Categorical Feature</strong></h2>
+We can use a bar chart for this. The categories are typically displayed on the x-axis while the height or length of the bars on the y-axis represents the frequency, count, or any other quantitative measure associated with each category.
+
 
