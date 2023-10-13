@@ -33,13 +33,27 @@ This is a basic code for creating a bar chart. The general syntax for plt.bar is
                 
 <br>
 
-* x: The x coordinates of the bars._<br>
-* height: The height(s) of the bars.<br>
-* width: The width(s) of the bars (default: 0.8).<br>
-* bottom: The y coordinate(s) of the bases of the bars (default: 0).<br>
-* align: Alignment of the bars to the x coordinates (default: 'center').
+* _x : The x coordinates of the bars._<br>
+* _height : The height(s) of the bars._<br>
+* _width : The width(s) of the bars (default: 0.8)._<br>
+* _bottom : The y coordinate(s) of the bases of the bars (default: 0)._<br>
+* _align : Alignment of the bars to the x coordinates (default: 'center')._
 
+If you want to change the color of the bars, you can specify the color inside of your plt.bar().
+<br>
 
+              plt.bar(species, counts, width = 0.6, color = 'mistyrose')
+
+<br>
+In this case, however, you can't have multiple colors. If you want different colors for each bar, you can specify the bar by using the index and .set_color(). In this way, you can get whatever color you want for each bar.
+<br>
+
+              penguin_bar[0].set_color('mistyrose')
+              penguin_bar[1].set_color('salmon')
+              penguin_bar[2].set_color('tomato')
+
+<br>
+_You can google for the matplotlib color options._
 
 Right above is the code we used to add Joel Embiid on Team USA. Lets print out the dictionary and see if it has updated! 
 <br>
