@@ -13,9 +13,49 @@ When we create graphs there are a couple of things to consider.<br>
 * Are we creating the graph based on one feature or multiple features?
 
 
-<h2><strong>One Categorical Feature</strong></h2>
-We can use a bar chart for this. The <strong>categories</strong> are typically displayed on the <strong>x-axis</strong> while the height or length of the bars on the <strong>y-axis</strong> represents the <strong>frequency, count, or any other quantitative measure associated with each category</strong>.
+## One Categorical Feature
+We can use a bar chart for this. The **categories** are typically displayed on the **x-axis** while the height or length of the bars on the **y-axis** represents the **frequency, count, or any other quantitative measure associated with each category**.
+<br></br>
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
+<br>
 
-<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%201.18.02%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
+                plt.figure(figsize=(10, 8))
+                penguin_bar = plt.bar(species, counts, width = 0.6)
+                plt.xlabel("Penguin Species")
+                plt.ylabel("Count")
+                plt.title("Penguin Species Distribution")
+                
+<br>
+This is a basic code for creating a bar chart. The general syntax for plt.bar is
+<br>
+
+                plt.bar(x, height, width, bottom, align)
+                
+<br>
+
+* x: The x coordinates of the bars._<br>
+* height: The height(s) of the bars.<br>
+* width: The width(s) of the bars (default: 0.8).<br>
+* bottom: The y coordinate(s) of the bases of the bars (default: 0).<br>
+* align: Alignment of the bars to the x coordinates (default: 'center').
+
+
+
+Right above is the code we used to add Joel Embiid on Team USA. Lets print out the dictionary and see if it has updated! 
+<br>
+<br>
+<strong> Python code Input >>> </strong> <br>
+
+                Team_USA
+<br>
+
+<strong> Python code Output >>> </strong> <br>
+
+                'Point Guard' : 'Stephen Curry', 
+                'Shooting Guard' : 'Devin Booker', 
+                'Small Forward' : 'LeBron James',
+                'Power Forward' : 'Kevin Durant', 
+                'Center' : 'Joel Embiid'
+<br>
 
 
