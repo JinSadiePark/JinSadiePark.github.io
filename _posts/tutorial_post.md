@@ -16,6 +16,9 @@ When we create graphs there are a couple of things to consider.<br>
 ## One Categorical Feature
 We can use a bar chart for this. The **categories** are typically displayed on the **x-axis** while the height or length of the bars on the **y-axis** represents the **frequency, count, or any other quantitative measure associated with each category**.
 <br></br>
+
+Let's start with matplotlib.
+
 <img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 <br>
 
@@ -26,7 +29,7 @@ We can use a bar chart for this. The **categories** are typically displayed on t
                 plt.title("Penguin Species Distribution")
                 
 <br>
-This is a basic code for creating a bar chart. The general syntax for plt.bar is
+This is the general syntax of a bar chart.
 <br>
 
                 plt.bar(x, height, width, bottom, align)
@@ -45,7 +48,7 @@ If you want to change the color of the bars, you can specify the color inside of
               plt.bar(species, counts, width = 0.6, color = 'mistyrose')
 
 <br>
-In this case, however, you can't have multiple colors. If you want different colors for each bar, you can specify the bar by using the index and .set_color(). In this way, you can get whatever color you want for each bar.
+In this case, however, you can't have multiple colors. If you want different colors for each bar, you can specify the bar by using the index and .set_color().
 <br>
 
               penguin_bar[0].set_color('mistyrose')
