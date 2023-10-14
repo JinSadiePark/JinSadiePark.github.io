@@ -83,7 +83,7 @@ _Note that the hue argument is more useful when you have multiple features._
 <br>
 
 ## Multiple Categorical Features
-We can also use a bar chart but because there is more than one feature, we are going to use a **stacked/grouped** bar chart.
+We can also use a bar chart but because there is more than one feature, we are going to use a **grouped** bar chart.
 
 <img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%208.34.29%20PM.png?raw=true" alt="Resized Image" width="500" height="300">
 <br>
@@ -104,3 +104,23 @@ The key is preparing the data for a grouped bar chart by grouping a penguin data
 
 _legend_ is a key component that provides an explanation or interpretation of the elements, data, or categories represented in the chart.<br>
 _xticks_ rotates x-axis labels for better readability. The unit of the value is degree.
+
+<br>
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%209.03.46%20PM.png?raw=true" alt="Resized Image" width="500" height="300">
+<br>
+                
+                grouped_data = penguins.groupby('species')[['bill_depth_mm', 'bill_length_mm', 'flipper_length_mm']].mean().reset_index()
+
+                melted_data = pd.melt(grouped_data, id_vars=['species'], value_vars=['bill_depth_mm', 'bill_length_mm', 'flipper_length_mm'], var_name='Measurement')
+                
+                sns.barplot(data=melted_data, x='species', y='value', hue='Measurement')
+                plt.xlabel("Penguin Species")
+                plt.ylabel("Mean Measurements (mm)")
+                plt.title("Penguin Bill Depth, Bill Length, and Flipper Length by Species")
+                plt.legend(title="Measurement", loc='upper left')
+
+Seaborn has one more step for a grouped bar chart. Melt is a data transformation operation in Pandas and other data manipulation libraries that reshapes or transforms a dataset from a wide format to a long format.
+
+<br>
+<br>
+Data visualization is a powerful tool for gaining insights from your data. Experiment with your own data, and don't hesitate to share your insights and visualizations with others. The best way to become proficient in data visualization is through practice, so start today!
