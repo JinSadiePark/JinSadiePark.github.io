@@ -41,13 +41,14 @@ If you want to change the color of the bars, you can specify the color inside of
 <br>
 
               plt.bar(species, counts, width = 0.6, color = 'mistyrose')
-<br>
+
 In this case, however, you can't have multiple colors. If you want different colors for each bar, you can specify the bar by using the index and .set_color().
 <br>
 
               penguin_bar[0].set_color('mistyrose')
               penguin_bar[1].set_color('salmon')
               penguin_bar[2].set_color('tomato')
+              
 _You can google for the matplotlib color options._<br>
 <img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 <br>
@@ -73,9 +74,33 @@ Here is the general syntax.
 * _y : The y coordinates of the bars._<br>
 <br>
 
-Seabron will use different colors for different values. If you want to specify a feature to have a different color, you can add a hue argument.
+Seabron will automatically use different colors for different values. If you want to specify a feature to have a different color, you can add a hue argument.
 <br>
 
                 sns.barplot(data, 'x', 'y', hue = 'x')
 
 _Note that the hue argument is more useful when you have multiple features._
+<br>
+
+## Multiple Categorical Features
+We can also use a bar chart but because there is more than one feature, we are going to use a **stacked/grouped** bar chart.
+
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%208.34.29%20PM.png?raw=true" alt="Resized Image" width="500" height="300">
+<br>
+
+                grouped_data = penguins.groupby('species')[['bill_depth_mm', 'bill_length_mm', 'flipper_length_mm']].mean()
+
+                grouped_data.plot(kind='bar', width=0.8, figsize=(10.5, 6))
+                plt.xlabel("Penguin Species")
+                plt.ylabel("Mean Bill Length (mm)")
+                plt.title("Penguin Bill Length by Species and Island")
+                
+The key is preparing the data for a grouped bar chart by grouping a penguin dataset by species and selecting the columns corresponding to bill depth, bill length, and flipper length. And you'll use _data.plot() and specify the kind of graph you want inside of the parentheses.
+
+<br>
+
+                plt.legend(title="Measurements", loc='upper left')
+                plt.xticks(rotation=0)
+
+_legend_ is a key component that provides an explanation or interpretation of the elements, data, or categories represented in the chart.<br>
+_xticks_ rotates x-axis labels for better readability. The unit of the value is degree.
