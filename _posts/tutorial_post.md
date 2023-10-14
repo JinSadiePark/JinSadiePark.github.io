@@ -48,9 +48,9 @@ In this case, however, you can't have multiple colors. If you want different col
               penguin_bar[0].set_color('mistyrose')
               penguin_bar[1].set_color('salmon')
               penguin_bar[2].set_color('tomato')
-
-<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 _You can google for the matplotlib color options._<br>
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
+<br>
 <br>
 <br>
 We can also use seaborn to create graphs.
