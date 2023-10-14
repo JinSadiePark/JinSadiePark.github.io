@@ -27,26 +27,21 @@ Let's start with matplotlib.
                 plt.xlabel("Penguin Species")
                 plt.ylabel("Count")
                 plt.title("Penguin Species Distribution")
-                
-<br>
+<br>                
 This is the general syntax of a bar chart.
 <br>
 
-                plt.bar(x, height, width, bottom, align)
-                
-<br>
+                plt.bar(x, height, width)             
 
 * _x : The x coordinates of the bars._<br>
 * _height : The height(s) of the bars._<br>
 * _width : The width(s) of the bars (default: 0.8)._<br>
-* _bottom : The y coordinate(s) of the bases of the bars (default: 0)._<br>
-* _align : Alignment of the bars to the x coordinates (default: 'center')._
 
+<br>
 If you want to change the color of the bars, you can specify the color inside of your plt.bar().
 <br>
 
               plt.bar(species, counts, width = 0.6, color = 'mistyrose')
-
 <br>
 In this case, however, you can't have multiple colors. If you want different colors for each bar, you can specify the bar by using the index and .set_color().
 <br>
@@ -55,24 +50,32 @@ In this case, however, you can't have multiple colors. If you want different col
               penguin_bar[1].set_color('salmon')
               penguin_bar[2].set_color('tomato')
 
-<br>
-_You can google for the matplotlib color options._
-
-Right above is the code we used to add Joel Embiid on Team USA. Lets print out the dictionary and see if it has updated! 
+_You can google for the matplotlib color options._<br>
 <br>
 <br>
-<strong> Python code Input >>> </strong> <br>
+We can also use seaborn to create graphs.
 
-                Team_USA
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%207.05.23%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 <br>
 
-<strong> Python code Output >>> </strong> <br>
+                sns.barplot(species_counts, x='species', y='count')
+                plt.xlabel("Penguin Species")
+                plt.ylabel("Count")
+                plt.title("Number of Penguins for Each Species")
 
-                'Point Guard' : 'Stephen Curry', 
-                'Shooting Guard' : 'Devin Booker', 
-                'Small Forward' : 'LeBron James',
-                'Power Forward' : 'Kevin Durant', 
-                'Center' : 'Joel Embiid'
+Here is the general syntax.
 <br>
 
+                sns.barplot(data, x, y)
+                
+* _data : DataFrame, array, or list of arrays_<br>
+* _x : The x coordinates of the bars._<br>
+* _y : The y coordinates of the bars._<br>
+<br>
 
+Seabron will use different colors for different values. If you want to specify a feature to have a different color, you can add a hue argument.
+<br>
+
+                sns.barplot(data, 'x', 'y', hue = 'x')
+
+_Note that the hue argument is more useful when you have multiple features._
