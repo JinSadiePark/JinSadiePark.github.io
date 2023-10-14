@@ -19,8 +19,7 @@ We can use a bar chart for this. The **categories** are typically displayed on t
 
 Let's start with matplotlib.
 
-<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
-<br>
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%201.18.02%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 
                 plt.figure(figsize=(10, 8))
                 penguin_bar = plt.bar(species, counts, width = 0.6)
@@ -50,6 +49,7 @@ In this case, however, you can't have multiple colors. If you want different col
               penguin_bar[1].set_color('salmon')
               penguin_bar[2].set_color('tomato')
 
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 _You can google for the matplotlib color options._<br>
 <br>
 <br>
