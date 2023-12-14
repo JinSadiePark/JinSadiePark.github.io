@@ -6,3 +6,4 @@ description: Short yet informative description
 image: "/path/to/image" or "url_to_image"
 --- 
 Hello World!
+This is the first post
