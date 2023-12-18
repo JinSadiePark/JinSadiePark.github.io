@@ -19,7 +19,7 @@ We can use a bar chart for this. The **categories** are typically displayed on t
 
 Let's start with matplotlib.
 
-<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%201.18.02%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/assets/images/Screenshot%202023-10-13%20at%201.18.02%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 
                 plt.figure(figsize=(10, 8))
                 penguin_bar = plt.bar(species, counts, width = 0.6)
