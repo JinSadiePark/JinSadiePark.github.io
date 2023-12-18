@@ -114,8 +114,6 @@ When I ran the code above, I found that the player with the most accurate field 
     high_stl_tov_players = df.sort_values(by='STL_TOV', ascending=False).head(5)[['PLAYER', 'STL_TOV']]
     high_blk_tov_players = df.sort_values(by='BLK_TOV', ascending=False).head(5)[['PLAYER', 'BLK_TOV']]
 
-<br>
-
 <img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/assets/images/Screenshot%202023-12-17%20at%206.52.10%20PM.png?raw=true" alt="Resized Image" width="600" height="400">
 
 Keita Bates-Diop and John Butler Jr. stand out in both steals-to-turnover and blocks-to-turnover ratios, showcasing a well-rounded defensive impact with a focus on generating steals and blocks while minimizing turnovers.
