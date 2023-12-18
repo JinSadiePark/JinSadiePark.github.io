@@ -2,7 +2,7 @@
 layout: post
 title:  "NBA Status"
 author: "Jinkyung Park"
-description: "This is a project ."
+description: "This is a project to Explore NBA Stats for Insights into Player Performances."
 image: "https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/assets/images/basketball_image%20Medium.png?raw=true"
 ---
 
@@ -10,7 +10,11 @@ image: "https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/assets/
 This collection of stats offers a fascinating look into player performances, from top scorers and shooting accuracy to team dynamics and defensive skills. Join me in exploring the numbers, uncovering standout players, and discovering the stories behind their on-court success. Let's break down the stats and find the hidden gems that make each player's journey in the NBA truly special.
 <br></br>
 
-Let's start with matplotlib.
+* Who's leading in total points, and are there any surprising players in the top 5?<br>
+* Which player has the most accurate field goal percentage among the top scorers?<br>
+* Who are the most reliable free throw shooters?<br>
+* Which team has the highest average efficiency??
+
 
 <img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%201.18.02%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 
