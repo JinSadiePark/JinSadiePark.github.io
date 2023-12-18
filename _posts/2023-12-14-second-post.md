@@ -3,7 +3,7 @@ layout: post
 title:  "NBA Status"
 author: "Jinkyung Park"
 description: "This is a project ."
-image: "https://buffml.com/wp-content/uploads/2022/12/plots_python.png"
+image: "https://images.unsplash.com/photo-1519861531473-9200262188bf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5iYXxlbnwwfHwwfHx8MA%3D%3D"
 ---
 
 ## Celebrating Hoops Excellence: Unveiling Insights from NBA
