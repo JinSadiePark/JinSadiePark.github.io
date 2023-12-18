@@ -50,13 +50,13 @@ In this case, however, you can't have multiple colors. If you want different col
               penguin_bar[2].set_color('tomato')
               
 _You can google for the matplotlib color options._<br>
-<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/assets/images/Screenshot%202023-10-13%20at%205.24.55%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 <br>
 <br>
 <br>
 We can also use seaborn to create graphs.
 
-<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%207.05.23%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/assets/images/Screenshot%202023-10-13%20at%207.05.23%20PM.png?raw=true" alt="Resized Image" width="400" height="300">
 <br>
 
                 sns.barplot(species_counts, x='species', y='count')
@@ -85,7 +85,7 @@ _Note that the hue argument is more useful when you have multiple features._
 ## Multiple Categorical Features
 We can also use a bar chart but because there is more than one feature, we are going to use a **grouped** bar chart.
 
-<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%208.34.29%20PM.png?raw=true" alt="Resized Image" width="500" height="300">
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/assets/images/Screenshot%202023-10-13%20at%208.15.57%20PM.png?raw=true" alt="Resized Image" width="500" height="300">
 <br>
 
                 grouped_data = penguins.groupby('species')[['bill_depth_mm', 'bill_length_mm', 'flipper_length_mm']].mean()
@@ -106,7 +106,7 @@ _legend_ is a key component that provides an explanation or interpretation of th
 _xticks_ rotates x-axis labels for better readability. The unit of the value is degree.
 
 <br>
-<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/_posts/Screenshot%202023-10-13%20at%209.03.46%20PM.png?raw=true" alt="Resized Image" width="500" height="300">
+<img src="https://github.com/JinSadiePark/JinSadiePark.github.io/blob/main/assets/images/Screenshot%202023-10-13%20at%209.03.46%20PM.png?raw=true" alt="Resized Image" width="500" height="300">
 <br>
                 
                 grouped_data = penguins.groupby('species')[['bill_depth_mm', 'bill_length_mm', 'flipper_length_mm']].mean().reset_index()
